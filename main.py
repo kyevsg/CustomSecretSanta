@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
-@app.route('/secretsanta')
+@app.route('/secretsanta', methods = ['GET', 'POST'])
 def secretsanta():
   return render_template('secretsanta.html')
 
